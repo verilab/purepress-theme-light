@@ -11,7 +11,6 @@
   <p>😶这里是空的。</p>
 </article>
 {% endif %}
-<h1>{{ config.INSTANCE_PATH }}</h1>
 {% for entry in entries %}
 <article class="article">
   <h2 class="article-title"><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
@@ -24,8 +23,8 @@
 </article>
 {% endfor %}
 
+{% if pager.prev_url or pager.next_url %}
 <div class="article pager-container">
-  {% if pager %}
   <ul class="pager">
     {% if pager.prev_url %}
     <li class="prev">
@@ -38,8 +37,8 @@
     </li>
     {% endif %}
   </ul>
-  {% endif %}
 </div>
+{% endif %}
 {% endblock %}
 
 {% block foot %}

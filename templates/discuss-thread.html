@@ -1,3 +1,6 @@
 {% if config.DISQUS_ENABLED %}
-{% include 'discuss/disqus.html' %}
+<div class="article discuss-thread" id="discuss-thread">
+  <h2>评论</h2>
+  {% include 'discuss/disqus.html' %}
+</div>
 {% endif %}

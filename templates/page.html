@@ -15,10 +15,7 @@
     {{ entry.content|safe }}
   </div>
 </article>
-<div class="article discuss-thread" id="discuss-thread">
-  <h2>评论</h2>
-  {% include ['custom/discuss-thread.html', 'discuss-thread.html'] ignore missing %}
-</div>
+{% include ['custom/discuss-thread.html', 'discuss-thread.html'] ignore missing %}
 {% endblock %}
 
 {% block foot %}
