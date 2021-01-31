@@ -43,8 +43,7 @@
 
 {% block foot %}
 <script>
-  // remove any images on index page
-  document.querySelectorAll(".article img").forEach(e => e.parentNode.removeChild(e));
-  setTimeout(() => window.stop(), 1000);
+  // stop loading any images on index page
+  document.querySelectorAll(".article img").forEach(e => e.setAttribute("src", ""));
 </script>
 {% endblock %}
