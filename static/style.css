@@ -343,12 +343,6 @@ img {
         margin-left: 0;
         width: 100%;
     }
-    .sidebar .widget {
-        display: none;
-    }
-    .sidebar .widget:first-child {
-        display: block;
-    }
     .main {
         order: 2;
         margin-top: 40px;
