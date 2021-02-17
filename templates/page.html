@@ -12,7 +12,7 @@
   <h1 class="article-title">{{ entry.title }}</h1>
   {% include ['custom/meta.html', 'meta.html'] ignore missing %}
   <div class="content">
-    {{ entry.content|safe }}
+    {{ entry.content | safe }}
   </div>
 </article>
 {% include ['custom/discuss-thread.html', 'discuss-thread.html'] ignore missing %}

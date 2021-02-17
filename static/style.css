@@ -91,7 +91,7 @@ img {
 }
 
 .site-title, .page {
-    max-width: 1100px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -150,7 +150,7 @@ img {
     overflow: hidden;
 }
 
-.content h1 a.anchor::before, .content h2 a.anchor::before, .content h3 a.anchor::before, .content h4 a.anchor::before, .content h5 a.anchor::before, .content h6 a.anchor::before {
+/* .content h1 a.anchor::before, .content h2 a.anchor::before, .content h3 a.anchor::before, .content h4 a.anchor::before, .content h5 a.anchor::before, .content h6 a.anchor::before {
     display: none;
     content: "#";
     position: absolute;
@@ -159,7 +159,7 @@ img {
 
 .content h1:hover a.anchor::before, .content h2:hover a.anchor::before, .content h3:hover a.anchor::before, .content h4:hover a.anchor::before, .content h5:hover a.anchor::before, .content h6:hover a.anchor::before {
     display: inline;
-}
+} */
 
 .content h1 {
     font-size: 1.8em;
