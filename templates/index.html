@@ -42,6 +42,7 @@
 {% endblock %}
 
 {% block foot %}
+{{ super() }}
 <script>
   // stop loading any images on index page
   document.querySelectorAll(".article img").forEach(e => e.setAttribute("src", ""));

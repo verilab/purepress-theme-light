@@ -19,6 +19,7 @@
 {% endblock %}
 
 {% block foot %}
+{{ super() }}
 <script>
   hljs.configure({ languages: [] }); // disable language auto detection
   hljs.initHighlightingOnLoad();
