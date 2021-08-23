@@ -2,7 +2,7 @@
 
 {% block head %}
 {{ super() }}
-<title>{{ entry.title + ' - ' + site.title }}</title>
+<title>{{ entry.title + ' - ' + global.site.title }}</title>
 <link rel="stylesheet" href="{{ url_for('theme.static', filename='railscasts.min.css') }}">
 <script src="{{ url_for('theme.static', filename='highlight.min.js') }}"></script>
 {% endblock %}
