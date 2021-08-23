@@ -5,6 +5,7 @@
 <title>{{ entry.title + ' - ' + global.site.title }}</title>
 <link rel="stylesheet" href="{{ url_for('theme.static', filename='railscasts.min.css') }}">
 <script src="{{ url_for('theme.static', filename='highlight.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
 {% endblock %}
 
 {% block main %}
@@ -21,7 +22,11 @@
 {% block foot %}
 {{ super() }}
 <script>
+  // enable code syntax highlight
   hljs.configure({ languages: [] }); // disable language auto detection
   hljs.initHighlightingOnLoad();
+
+  // enable medium-zoom for all images
+  mediumZoom(document.querySelectorAll('.content img'));
 </script>
 {% endblock %}
