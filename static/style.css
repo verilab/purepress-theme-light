@@ -143,7 +143,6 @@ img {
 
 .content {
     position: relative;
-    line-height: 1.66;
 }
 
 .content h1 a.anchor::before, .content h2 a.anchor::before, .content h3 a.anchor::before, .content h4 a.anchor::before, .content h5 a.anchor::before, .content h6 a.anchor::before {
@@ -157,6 +156,10 @@ img {
 
 .content h1 {
     font-size: 1.8em;
+}
+
+.content, .content p, .content ul, .content ol {
+    line-height: 1.66;
 }
 
 .content pre {
