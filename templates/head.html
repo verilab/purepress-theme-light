@@ -4,3 +4,5 @@
 <meta http-equiv="cleartype" content="on">
 <link rel="alternate" type="application/atom+xml" title="{{ global.site.title }}" href="{{ url_for('feed') }}" />
 <link href="{{ url_for('theme.static', filename='style.css') }}" rel="stylesheet">
+{% include 'custom/extra_head.html' ignore missing %}
+{% include ['custom/analytics.html', 'analytics.html'] ignore missing %}
