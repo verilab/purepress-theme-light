@@ -1,6 +1,6 @@
 # Light
 
-**Light** is a light-weight theme for [PurePress](https://github.com/richardchien/purepress).
+**Light** is a light-weight theme for [PurePress](https://github.com/verilab/purepress).
 
 ## Screenshot
 
